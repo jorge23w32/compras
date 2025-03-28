@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gestor de Productos</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<h1>Abarrotes Insanos</h1>
+<div class="formularios">
+    <form method="post" class="formulario" id="formularioCliente">
+        <h2>Compras Productos</h2>
+        <ul>
+            <li>
+                <label for="nombreCompra">Nombre del Producto:</label>
+                <input type="text" id="nombreCompra" name="nombreCompra" placeholder="Manzanas Verdes" required>
+            </li>
+            <li>
+                <label for="unidadesC">Unidades:</label>
+                <input type="text" id="unidadesC" name="unidadesC" placeholder="1" required>
+            </li>
+        </ul>
+        <h3>Acciones</h3>
+        <div class="botones">
+            <button id="comprar" type="submit">Comprar</button>
+            <button id="mostrar" type="button">Mostrar Productos</button>
+        </div>
+    </form>
+    <form method="post" class="formulario" id="formularioProducto">
+        <h2>Gestión de Productos</h2>
+        <ul>
+            <li>
+                <label for="nombreProducto">Nombre del Producto:</label>
+                <input type="text" id="nombreProducto" name="nombreProducto" placeholder="Melon China" required>
+            </li>
+            <li>
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Paquete de 2 unidades..." required></textarea>
+            </li>
+            <li>
+                <label for="categoria">Categoría:</label>
+                <input type="text" id="categoria" name="categoria" placeholder="Fruta" required>
+            </li>
+            <li>
+                <label for="unidades">Unidades Disponibles:</label>
+                <input type="number" id="unidades" name="unidades" placeholder="5" required>
+            </li>
+            <li>
+                <label for="precio">Precio Unitario:</label>
+                <input type="number" id="precio" name="precio" placeholder="150.00" required>
+            </li>
+        </ul>
+        <h3>Acciones</h3>
+        <div class="botones">
+            <button id="agregar" type="submit">Agregar</button>
+            <button id="buscar" type="button">Buscar</button>
+            <button id="eliminar" type="button">Eliminar</button>
+        </div>
+    </form>
+</div>
+<div class="compras">
+    <label for="listaProductos">Productos</label>
+    <textarea readonly class="listaProductos" id="listaProductos"></textarea>
+    <label for="productosComprados">Productos Comprados</label>
+    <textarea readonly class="productosComprados" id="productosComprados"></textarea>
+    <label for="precioFinal">Precio Total</label>
+    <input readonly class="precioFinal" id="precioFinal">
+</div>
+<script src="./javascript/Index.js" type="module"></script>
+</body>
+</html>
