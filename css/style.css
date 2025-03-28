@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 1.2em;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    max-width: 80%;
+    margin: 0 auto 3em;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+.formularios {
+    display: flex;
+    max-width: 100%;
+    gap: 1em;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.formulario {
+    flex: 1; /* Hace que ambos formularios ocupen el mismo espacio */
+    min-width: 300px; /* Ancho mínimo antes de pasar a la siguiente línea */
+    max-width: 100%;}
+h2 {
+    text-align: center;
+}
+ul, li{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+label {
+    text-align: start;
+    font-weight: bold;
+}
+input, textarea {
+    height: 3em;
+    width: 100%;
+    line-height: 3em;
+    max-width: 100%;
+    vertical-align: middle;
+    border: none;
+}
+.precioFinal {
+    height: 0;
+}
+h3{
+    color: #004900;
+    font-weight: bolder;
+    text-align: center;
+}
+.botones {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    height: auto;
+    max-width: 100%;
+}
+.botones button {
+    flex: 1;
+    min-width: fit-content;
+    max-width: 100%;
+    margin-inline: 0.2em;
+    border-radius: 100vw;
+    border: none;
+    background-color: green;
+    font-weight: bold;
+    color: white;
+    font-size: 0.8em;
+    height: 2.5em;
+}
+.compras {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+.compras label {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+.listaProductos, .productosComprados {
+    min-height: 100px; /* Altura mínima inicial visible */
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    overflow-y: auto;
+    resize: vertical;
+    white-space: pre;
+    line-height: 1.5;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 1em;
+    display: block;
+}
